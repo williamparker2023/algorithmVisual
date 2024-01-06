@@ -5,6 +5,9 @@
   text-align: center;
 }
 
+html {
+  color: white;
+}
 .logo {
   height: 6em;
   padding: 1.5em;
@@ -39,4 +42,23 @@
 
 .read-the-docs {
   color: #888;
+}
+
+#realCanvas {
+  height: 65vh;
+  width: 80vw;
+  border: 3px solid white;
+ color: gray;
+ position: absolute;
+float: left;
+
+}
+
+div#realCanvas{
+  border: 1px solid gray;
+  display: inline;
+  position: relative;
+  float: left;
+  width: auto;
+
 }
