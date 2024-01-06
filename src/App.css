@@ -44,17 +44,19 @@ html {
   color: #888;
 }
 
-#realCanvas {
+#container {
   height: 65vh;
   width: 80vw;
   border: 3px solid white;
  color: gray;
  position: absolute;
-float: left;
+
 
 }
-
-div#realCanvas{
+body {
+  position: absolute;
+}
+div#container{
   border: 1px solid gray;
   display: inline;
   position: relative;

@@ -1,31 +1,31 @@
+
+
 function Canvas(){
+    
+
+
+    var count= 10;
     var numList = [];
     var divList= [];
     var num=0;
 
-    var divStyle= {
-        color: "gray",
-        border: "1px solid gray",
-        backgroundColor: "white",
-        
-    };
 
-    var divStyle2= {
-        color: "black",
-        border: "1px solid white",
-        backgroundColor: "black"
-    };
 
-    for (var i=0; i<20; i++){
-        num = Math.floor(Math.random() * 100);
+    for (var i=0; i< count; i++){
+        num = Math.floor(Math.random() * 60);
         numList.push(num);
+        var top = 65-num;
         divList.push(<div   key={i} style= 
             {{color: "gray",
-            border: "1px solid gray",
-            height: Math.floor(Math.random() * 100),
-            width: "20px",
+            color: "white",
+            boxShadow: "inset 0px 0px 0px 3px white",
+            height: num + 'vh',
+            width: (80/count)  + "vw",
             float: "left",
-            position: "relative"
+            position: "relative",
+            top: "auto",
+            display: "inLineBlock",
+            marginTop: (top + "vh")
             }} />);
     }
     console.log(divList);
