@@ -67,6 +67,28 @@ function Canvas(){
                 divList[lastIndex + 1] = temp1;
                 
             }
+            for (var i=0; i< count; i++){
+                num = 
+                numList.push(num);
+                var top = 65-num;
+        
+                var r = 255-num*4;
+                var g = num*4;
+                var b = 0;
+        
+                divList.push(<div   key={i} style= 
+                    {{
+                    color: "white",
+                    boxShadow: "inset 0px 0px 0px 3px rgb(" + r + "," + g + "," + b + ")",
+                    height: num + 'vh',
+                    width: (80/count)  + "vw",
+                    float: "left",
+                    position: "relative",
+                    top: "auto",
+                    display: "inLineBlock",
+                    marginTop: (top + "vh")
+                    }} />);
+            }
         console.log(divList);        
     }   
     
