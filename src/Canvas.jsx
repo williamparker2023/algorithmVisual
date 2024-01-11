@@ -49,6 +49,7 @@ function Canvas(){
     // }
     // console.log(divList[0]);
 
+
     function insertionSort(){
         //This function will sort by the insertion method
         for (var j = 1; j < numList.length; j++) {
@@ -65,10 +66,10 @@ function Canvas(){
                 }
                 numList[lastIndex + 1] = currentElement;
                 divList[lastIndex + 1] = temp1;
-                
-            }
+        }
+          
             for (var i=0; i< count; i++){
-                num = 
+                
                 numList.push(num);
                 var top = 65-num;
         
@@ -92,10 +93,11 @@ function Canvas(){
         console.log(divList);        
     }   
     
+    
     return (
         
     <div>
-        <button onClick={insertionSort}>Insertion Sort</button>
+        { <button onClick={insertionSort}>Insertion Sort</button> }
         <div id = "container">
             
               
