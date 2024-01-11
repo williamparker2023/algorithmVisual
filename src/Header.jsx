@@ -2,7 +2,7 @@ function Header(){
 
     return (
         <header>
-            <h1>Data Visualization Project</h1>
+            <h1>Sorting Algorithms Visualization Project</h1>
             <nav>
                 {/* <ul>
                     <li>Sort</li>
