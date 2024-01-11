@@ -13,7 +13,7 @@ const InsertionSortVisualization = () => {
       setCount(inputValue);
 
       const numbers = Array.from({ length: parseInt(inputValue, 10) }, () =>
-        Math.floor(Math.random() * 30) + 1
+        Math.random() * 30 + 1
       );
 
       setArray(numbers);
@@ -58,7 +58,7 @@ const InsertionSortVisualization = () => {
 
   const randomizeArray = () => {
     const numbers = Array.from({ length: parseInt(count, 10) }, () =>
-      Math.floor(Math.random() * 30) + 1
+      Math.random() * 30 + 1
     );
 
     setArray(numbers);
