@@ -75,10 +75,11 @@ div#container{
   display: flex;
   flex-direction: row; /* Updated from row-reverse */
   width: 100%;
+
 }
 
 .bar {
-  margin: 0 2px;
+  margin: 0 0.3vh;
   align-self: flex-end;
 }
 

@@ -141,7 +141,7 @@ const SortVisualization = () => {
 
   const randomizeArray = () => {
     const numbers = Array.from({ length: parseInt(count, 10) }, () =>
-      Math.random() * 30 + 1
+      Math.random() * 20 + 1
     );
 
     setArray(numbers.map((value) => ({ value, color: 'white' })));
@@ -182,8 +182,8 @@ const SortVisualization = () => {
             key={index}
             className="bar"
             style={{
-              flex: `1 0 ${(100 / array.length).toFixed(2)}%`,
-              height: `${item.value * 20}px`,
+              flex: ` ${(90 / array.length)}%`,
+              height: `${item.value * 3}vh`,
               backgroundColor: item.color,
               transition: 'background-color 0.1s', // Adjust the transition time
             }}
