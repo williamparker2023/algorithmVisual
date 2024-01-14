@@ -15,7 +15,7 @@ const SortVisualization = () => {
         Math.random() * 20 + 1
       );
 
-      setArray(numbers.map((value) => ({ value, color: 'white' })));
+      setArray(numbers.map((value) => ({ value, color: 'blue' })));
     } else {
       setCount('');
       setArray([]);
@@ -54,7 +54,7 @@ const SortVisualization = () => {
           currentIndex--;
         }
 
-        newArray[currentIndex] = { value: currentElement, color: 'white' };
+        newArray[currentIndex] = { value: currentElement, color: 'blue' };
 
         // Update state to trigger re-render
         setArray([...newArray]);
@@ -144,7 +144,7 @@ const SortVisualization = () => {
       Math.random() * 20 + 1
     );
 
-    setArray(numbers.map((value) => ({ value, color: 'white' })));
+    setArray(numbers.map((value) => ({ value, color: 'blue' })));
     setStepIndex(0);
   };
 
